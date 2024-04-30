@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcina Dantas Feijão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+:root {
+            --cor-primaria: #051600;
+            --cor-link: #0400ff;
+            --cor-head: #000000;
+            --color-headhove: #fffafa;
+            --color-h1:#00e1ff;
+            --color--txt-top:#b80600;
+            --color--border:#000000 ;
+            --color-h3: #000000;
+            --color-footer:#000000;
+            --color-footer-txt:#ff0000;
+            --color-link2:#ffffff;
+            --color-social-border:#ffffff;
+            --color--social-links-hover: #003b4d;
+            --color-link-border: #ffffff;
+        }
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+           background-color: var(--cor-primaria);
+            height: 100vh;
+        }
+
+        .interface {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        header {
+            padding: 40px 4%;
+        }
+
+        header > .interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header a {
+            color: var(--cor-link);
+            text-decoration: none;
+            display: inline-block;
+            transition: 60ms;
+        }
+
+        header a:hover{
+            color:var(--color-headhove) ;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 8px #858585 
+             }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            padding: 10px 40px;
+            font-size: 18px;
+            background-color: var(--cor-head);
+            border: 0;
+            border-radius: 30px;
+        }
+
+        section.top-site{
+            padding: 40px 4%;
+        }
+
+        section.top-site .flex{
+            align-items: center;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .top-site h1{
+           color: var(--color-h1);
+           font-size: 52px;
+           line-height: 40px;
+        }
+
+    .top-site .txt-top-site p{
+         color: var(--color--txt-top);
+         margin: 40px 0;
+         text-align: justify;
+         font-size: 21px;
+    }
+ 
+    .top-site .img-top-site img{
+         position: relative;
+         animation:  flutuar 2s ease-in-out infinite alternate ;
+         border-radius: 30px;
+    }
+
+    @keyframes flutuar{
+        0%{
+            top:0;
+        }
+        100%{
+            top: 30px;
+        }
+    }
+
+    .apresentacao-membros {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-link);
+    padding: 40px 4%;
+   
+}
+
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-footer-txt);
+    text-align: center;
+    padding: 20px 50px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--color-link2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.4s;
+    border: 2px solid ; 
+    border-color: var(--color-social-border);
+    padding: 5px 15px;
+}
+
+.social-links a:hover {
+    background-color:var(--color--social-links-hover);
+    border-color: var(--color-link-border);/* Muda a cor da borda para branco quando o mouse passa por cima */
+}
+
+
+
+</style>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="Logo">
+                <a href="#">
+                    <img src="alcina3.png" alt="logo da Escola Alcina">
+                </a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="newporti.html">MENU PRINCIPAL</a></li>
+                    <li><a href="audi.html">yan victor</a></li>
+                    <li><a href="davi.html">Davi Foina</a></li>
+                    <li><a href="lippe.html">felipe dias</a></li>
+                    <li><a href="fredynho.html">pedro stipp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="top-site">
+            <div class="interface">
+             <div class="flex">
+                <div class="txt-top-site">
+                    <h1> Erick da Silva Tenor<span></span></h1>
+                    <p>Hello,meu nome é Érick,moro em scs desde 2005,estudei no Emef Bartolomeu,gosto de jogos eletronicos,trinar e praticar esportes e jogar RPG.
+                  Estou pensando e sonhando em igressar na area da programaçao,gosto de esportes,meu preferidos sao os de artes marciais,os que usam bolas(la ele),
+                        menos de futboll,tenho preferencia em usar braços e maos do que pernas como basqete,volei.</p>
+                        <p> um pouco de conhecimento de html  php,tbm manjo de edit e edit de fotos,sou ansioso e agitado, TDAH,assim que eu sair da escola,pretendo fazer o 
+                            possivel pra entrar na area da programaçao,irei estudar,praticar,fazer curso,qualquer coisa pra ter mais 
+                            experiencia em programaçao.
+                       dpois que eu sair da escola,vou trabalhar e estudar ao mesmo  tempo,trabalhar eu nao sei...talvez em um mercadinho,numa cafeteria ou em uma fabrica,efim sao tanos empregos 
+                        simples pra ter,mas a programaçao eu quero estudar por meio periodo,na programaçao quero desenvolver sites,jogos e quem sabe novas tecnologias,so tnho que agradecer tudo aos 
+                        meus amigos.</p>
+                  
+                </div><!--txt--> 
+                <div class="img-top-site">
+                    <img src="erick.jpg" alt="">
+
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+</section>
+
+<div class="social-links">
+    <a class="top-links--nav" href="https://discord.com/channels/1233829998738280450/1233829999270695025">
+        <img src="newdiscord.png" class="top-link-img">
+        Discord
+    </a>
+    <a class="top-links--nav" href="https://t.me/+xDTtMTl84DYxYjFh">
+        <img src="telegram2.png" class="top-link-img">
+        Telegram
+    </a>
+</div>
+
+    <footer>
+        <div class="interface">
+            <p>&copy; 2024 EMEF Alcina Dantas Feijão. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
