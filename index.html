@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcina Dantas Feijão</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --cor-primaria: #2d075ff1;
+            --cor-link: #000000;
+            --cor-head: #a100e0;
+            --color-headhove: #fffafa;
+            --color-h1:#ff1100;
+            --color--txt-top:#07e2ff;
+            --color--border:#000000 ;
+            --color-h3: #000000;
+            --color-p:#0cceff;
+            --color-footer:#000000;
+            --color-footer-txt:#ffffff;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cor-primaria);
+            height: 100vh;
+        }
+
+        .interface {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .flex{
+            display: flex;
+        }
+
+        header {
+            padding: 40px 4%;
+        }
+
+        header > .interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;         
+        }
+
+        header a {
+            color: var(--cor-link);
+            text-decoration: none;
+            display: inline-block;
+            transition: 60ms;
+        }
+
+        header a:hover{
+            color:var(--color-headhove) ;
+            transform: scale(1.05);
+            box-shadow: 0px 0px 8px #858585 
+             }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            padding: 10px 40px;
+            font-size: 18px;
+            background-color: var(--cor-head);
+            border: 0;
+            border-radius: 30px;
+        }
+
+        section.top-site{
+            padding: 40px 4%;
+        }
+
+        section.top-site .flex{
+            align-items: center;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .top-site h1{
+           color: var(--color-h1);
+           font-size: 52px;
+           line-height: 40px;
+        }
+
+    .top-site .txt-top-site p{
+         color: var(--color--txt-top);
+         margin: 40px 0;
+         text-align: justify;
+         font-size: 20px;
+    }
+ 
+    .top-site .img-top-site img{
+         position: relative;
+         animation:  flutuar 2s ease-in-out infinite alternate ;
+         border-radius: 30px;
+    }
+
+    @keyframes flutuar{
+        0%{
+            top:0;
+        }
+        100%{
+            top: 30px;
+        }
+    }
+
+    .apresentacao-membros {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-link);
+    padding: 40px 4%;
+   
+}
+
+
+
+.membro {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+    border: 5px solid var(--color--border);
+    border-radius: 30px;
+    padding: 20px 50px;
+    display: inline-block;
+    box-shadow: 0px 0px 8px #858585 ;
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 30px;
+    box-shadow: 0px 0px 8px #858585; 
+}
+
+.membro h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--color-h3);
+}
+
+.membro p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    color: var(--color-p);
+
+}
+
+main {
+    margin-bottom: 30px; /* Adiciona um espaçamento inferior */
+}
+
+
+footer {
+    background-color: var(--color-footer);
+    color: var(--color-footer-txt);
+    text-align: center;
+    padding: 20px 50px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="Logo">
+                <a href="#">
+                    <img src="alcina2.jpg" alt="logo da Escola Alcina">
+                </a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="lippe.html">Felipe Dias</a></li>
+                    <li><a href="obito.html">Erick Tenor</a></li>
+                    <li><a href="davi.html">Davi Foina</a></li>
+                    <li><a href="fredynho.html">Pedro Henrique</a></li>
+                    <li><a href="audi.html">Yan Victor</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <main>
+        <section class="top-site">
+            <div class="interface">
+             <div class="flex">
+                <div class="txt-top-site">
+                    <h1>EMEF Alcina Dantas Feijão 2024<span></span></h1>
+                    <p>Somos um grupo de designers e desenvolvedores web apaixonados e 
+                        dedicados, unidos por nossa paixão em criar projetos web impactantes e
+                         envolventes. Acreditamos que, trabalhando juntos, podemos alcançar grandes coisas.
+                        Nosso compromisso é fornecer soluções web inovadoras e de alta 
+                        qualidade que atendam às necessidades específicas de nossos clientes.
+                         Valorizamos a colaboração, o trabalho em equipe e a excelência em 
+                         tudo o que fazemos.</p>
+
+                </div><!--txt--> 
+                <div class="img-top-site">
+                    <img src="verdade.jpg" alt="">
+
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    <section class="apresentacao-membros">
+        <div class="interface">
+            <div class="flex">
+                <div class="membro">
+                    <img src="lippe2.png" alt="Membro 1">
+                    <h3>felipe dias</h3>
+                    <p> sou o Felipe Dias. Amante de jogos de tiro, RPG, livros e música. Animado para compartilhar mais sobre mim neste trabalho!</p>
+                </div>
+                <div class="membro">
+                    <img src="pedrão.jpg" alt="Membro 2">
+                    <h3>pedro stipp</h3>
+                    <p> oi sou o aprecio ler livros, jogar simuladores e possuo habilidades em programação HTML, CSS e edição de video também. </p>
+                </div>
+                <div class="membro">
+                    <img src="erick.jpg" alt="Membro 3">
+                    <h3>erick</h3>
+                    <p>um membro essencial do nosso grupo. Além de se destacar em RPG e programação, ele também cria vídeos para o YouTube. Com o objetivo de seguir carreira na área de programação</p>
+                </div>
+                <div class="membro">
+                    <img src="yan2.jpg" alt="Membro 4">
+                    <h3>yan victor</h3>
+                    <p>um membro fundamental do nosso grupo. Além de sua paixão por carros de corrida e esportivos, ele também é habilidoso em PHP. </p>
+                </div>
+                <div class="membro">
+                    <img src="davi.jpg" alt="Membro 5">
+                    <h3>Davi foina</h3>
+                    <p>um membro essencial do nosso grupo. Ele é apaixonado por design, jogos e música, trazendo uma perspectiva única para nossos projetos. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="interface">
+            <p>&copy; 2024 EMEF Alcina Dantas Feijão. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
